@@ -6,10 +6,10 @@ void BlinkInit(void)
     pinMode(LED_BUILTIN, OUTPUT);
 }
 
-void BlinkLed(void)
+void BlinkLed(int onTime, int offTime)
 {
     digitalWrite(LED_BUILTIN, HIGH);
-    delay(100);
+    delay(onTime);
     digitalWrite(LED_BUILTIN, LOW);
-    delay(200);
+    delay(offTime);
 }
